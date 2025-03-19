@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em dispositivos diferentes ou simplismentes aumente e dirminua o tamanho do seu navegador </p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-p.webp" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/imagem-m.jpg" type="image/png">
+        <img src="imagens/imagem-g.jpg" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir Áudios em HTML5.</p>
+    <audio src="midia/WhatsApp Ptt 2025-02-21 at 14.24.27.ogg"controls  autoplay></audio>
+
+    <audio>
+        <source src="midia/WhatsApp Ptt 2025-02-21 at 14.24.27.ogg" type="audio/ogg">
+    </audio>
+
+</body>
+</html>
