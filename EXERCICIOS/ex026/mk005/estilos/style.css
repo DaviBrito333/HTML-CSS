@@ -1,75 +1,91 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define a codificação de caracteres como UTF-8 para suportar acentuação e caracteres especiais */
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para toda a página */
+    margin: 0px;  /* Remove margens externas padrão de todos os elementos */
+    padding: 0px; /* Remove o espaçamento interno padrão de todos os elementos */
 }
 
-body , html {
-    background-color: lightgrey;
+body, html {
+    background-color: #007bff; /* Define a cor de fundo azul para o corpo da página e o elemento HTML */
 }
 
 header {
-    background-color: gray;
+    background-color: #007BFF; /* Define a cor de fundo do cabeçalho igual ao fundo da página */
 } 
 
 header > h1 {
-    padding: 10px;
-    text-align: center;
+    padding: 10px; /* Espaçamento interno ao redor do título */
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
 
 span#burguer {
-    background-color: rgb(48, 48, 48);
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
+    background-color: #343A40; /* Fundo escuro para o ícone do menu hamburguer */
+    display: block; /* Faz o span se comportar como um bloco (ocupa linha inteira) */
+    color: white; /* Cor do texto (ícone) branca */
+    text-align: center; /* Centraliza o ícone dentro do bloco */
+    padding: 10px; /* Espaço interno ao redor do conteúdo */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
 span#burguer:hover {
-    background-color: white;
-    color: black;
+    background-color: white; /* Altera a cor de fundo ao passar o mouse */
+    color: black; /* Altera a cor do texto ao passar o mouse */
 }
 
 menu {
-    display: none;
+    display: none; /* Oculta o menu por padrão (pode ser ativado com JavaScript) */
 }
 
 menu > ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove os marcadores da lista (bolinhas, números, etc.) */
 }
 
 menu > ul > li > a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color: rgb(87, 87, 87);
-    color: white;
-    border-top: 2px solid rgba(128, 128, 128, 0.582);
+    display: block; /* Faz cada link ocupar a largura total da linha */
+    padding: 10px; /* Espaço interno ao redor do link */
+    text-decoration: none; /* Remove sublinhado dos links */
+    text-align: center; /* Centraliza o texto do link */
+    background-color: #343a40; /* Fundo escuro para os links do menu */
+    color: white; /* Cor do texto dos links */
+    border-top: 2px solid rgba(128, 128, 128, 0.582); /* Linha separadora suave entre os itens do menu */
 } 
 
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color: gray; /* Muda a cor de fundo do link ao passar o mouse */
 }
 
 main {
-    width: 90vw;
-    background-color: white;
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;
+    width: 90vw; /* Define a largura do conteúdo principal como 90% da largura da viewport */
+    background-color: white; /* Fundo branco para contraste com o fundo azul */
+    margin: auto; /* Centraliza horizontalmente */
+    margin-top: 10px; /* Espaço acima do conteúdo principal */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
 article > h2 {
-    padding-bottom: 20px;
+    padding-bottom: 20px; /* Espaço abaixo dos subtítulos */
 }
 
 article > p {
-    text-align: justify; 
-    margin-bottom: 20px;
-    text-indent: 20px;
+    text-align: justify; /* Alinha o texto dos parágrafos dos dois lados */
+    margin-bottom: 20px; /* Espaço abaixo de cada parágrafo */
+    text-indent: 20px; /* Recuo na primeira linha de cada parágrafo */
 }
+ 
+footer {
+    background-color: #343A40; /* Cor de fundo escura para o rodapé */
+    height: 10px; /* Altura inicial do rodapé (mas sobrescrita pelo padding) */
+    display: block; /* Define o footer como bloco */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px; /* Espaço interno do rodapé */
+    text-decoration: none; /* Garante que não haja sublinhado em textos do rodapé */
+    color: white; /* Cor do texto no rodapé */
+}
+
+ a {
+    text-decoration: none;
+    color: white;
+}
+
