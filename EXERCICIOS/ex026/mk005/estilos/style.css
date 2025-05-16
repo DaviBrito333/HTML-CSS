@@ -8,6 +8,8 @@
 
 body, html {
     background-color: #007bff; /* Define a cor de fundo azul para o corpo da página e o elemento HTML */
+    background-image: url(../tela-de-login_comprimida.jpg);
+    background-repeat: no-repeat;
 }
 
 header {
@@ -88,4 +90,6 @@ footer {
     text-decoration: none;
     color: white;
 }
+
+
 
